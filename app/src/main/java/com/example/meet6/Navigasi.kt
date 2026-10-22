@@ -35,3 +35,14 @@ fun DataApp(
                     }
                 )
             }
+
+            // Halaman 2: Detail Tampil Data
+            composable(route = Navigasi.Detail.name) {
+                TampilData(
+                    onBackBtnClick = {cancelAndBackToFormulirSaya(navController)
+                    }
+                )
+            }
+        }
+    }
+}
